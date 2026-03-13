@@ -1,98 +1,207 @@
-# CONTRIBUTING.md — Contribution Guidelines
+# Contributing to Autonomous DeFi Agent
 
 This file explains how people can contribute to your project.
 It prevents confusion and keeps contributions organized.
 
-### 1. Introduction
+Thank you for your interest in contributing to **Autonomous DeFi Agent**.
+This project explores autonomous agents as economic infrastructure capable of interacting with DeFi protocols and executing on-chain financial strategies.
 
-Thank you for your interest in contributing to the Autonomous DeFi Agent project.
-We welcome contributions including bug fixes, new strategies, documentation improvements, and feature enhancements.
+We welcome contributions from developers, researchers, and builders interested in **AI agents, blockchain infrastructure, and decentralized finance**.
 
+---
 
-### 2. Ways to Contribute
-List the different ways contributors can help.
+# Ways to Contribute
 
-```
-Ways to contribute:
-- Report bugs
-- Suggest features
-- Submit pull requests
-- Improve documentation
-- Implement trading strategies
-```
+You can contribute in several ways:
 
-### 3. Development Setup
-Explain how to run the project locally.
+* Reporting bugs
+* Suggesting new features
+* Implementing trading strategies
+* Improving documentation
+* Writing tests
+* Improving performance or security
 
-```
-Clone the repository
-Install dependencies
-Configure environment variables
-Run the agent locally
-```
+All contributions that improve the project are welcome.
 
-### 4. Branching Strategy
-Explain how contributors should create branches.
+---
 
-```
-main → production-ready code
-dev → development branch
-feature/* → new features
-fix/* → bug fixes
+# Development Setup
+
+## 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/autonomous-defi-agent.git
+cd autonomous-defi-agent
 ```
 
-Example branch name:
+## 2. Install dependencies
 
-```
-feature/gas-estimator-module
-```
+Python dependencies:
 
-### 5. Pull Request Guidelines
-Explain how contributors should submit PRs.
-
-```
-Before submitting a PR:
-
-[ ] Code builds successfully
-[ ] Tests pass
-[ ] Documentation updated
-[ ] PR description explains changes
-
+```bash
+pip install -r requirements.txt
 ```
 
-### 6. Coding Standards
-Define style expectations.
+JavaScript dependencies (for smart contracts or frontend):
 
-• PEP8 for Python
-• ESLint for JS/TS
-• meaningful variable names
-• comments for complex logic
-
-```
-Follow PEP8 style guidelines for Python code.
-Use descriptive variable and function names.
+```bash
+npm install
 ```
 
-### 7. Issue Reporting
-Explain how to report bugs properly.
+---
 
-Typical info required:
+## 3. Configure environment variables
 
-```
-Environment
-Steps to reproduce
-Expected result
-Actual result
-Logs or screenshots
+Create a `.env` file using the provided template:
 
 ```
+cp .env.example .env
+```
 
-
-### 8. Security Disclosure 
-Important for a financial/blockchain project.
+Example variables:
 
 ```
-If you discover a security vulnerability,
-please report it privately instead of opening a public issue.
+RPC_URL=
+PRIVATE_KEY=
+CHAIN_ID=
+MAX_TRADE_SIZE=1000
+MAX_DAILY_LOSS=5
+```
+
+---
+
+## 4. Run the agent locally
+
+```bash
+python agent/run_agent.py
+```
+
+---
+
+# Branching Strategy
+
+We use a simple Git branching workflow.
+
+Main branches:
+
+* **main** → stable production-ready code
+* **dev** → active development branch
+
+Feature branches should follow this format:
 
 ```
+feature/<feature-name>
+```
+
+Example:
+
+```
+feature/gas-estimator
+feature/arbitrage-strategy
+feature/wallet-manager
+```
+
+Bug fixes:
+
+```
+fix/<bug-name>
+```
+
+---
+
+# Pull Request Guidelines
+
+Before submitting a Pull Request:
+
+* Ensure your code builds successfully
+* Ensure tests pass
+* Update documentation if necessary
+* Clearly describe the purpose of the change
+
+Pull requests should include:
+
+* A clear title
+* A detailed description of changes
+* Any relevant issue references
+
+Example PR title:
+
+```
+Add gas fee estimator module
+```
+
+---
+
+# Coding Standards
+
+Please follow these guidelines:
+
+### Python
+
+* Follow **PEP8** style guidelines
+* Use descriptive variable and function names
+* Write docstrings for public functions
+
+### Smart Contracts
+
+* Follow Solidity best practices
+* Add comments explaining contract logic
+* Avoid unnecessary complexity
+
+### General
+
+* Keep functions small and focused
+* Prefer readability over cleverness
+* Document non-obvious behavior
+
+---
+
+# Testing
+
+When possible, include tests for new functionality.
+
+Run tests with:
+
+```bash
+pytest
+```
+
+Smart contract tests:
+
+```bash
+npx hardhat test
+```
+
+---
+
+# Reporting Issues
+
+If you find a bug, please open an issue including:
+
+* description of the issue
+* steps to reproduce
+* expected behavior
+* actual behavior
+* environment information
+
+This helps maintainers resolve issues quickly.
+
+---
+
+# Security Issues
+
+Because this project interacts with **financial infrastructure and blockchain assets**, security vulnerabilities should be reported responsibly.
+
+If you discover a security issue, please **do not open a public issue**.
+Instead contact the maintainers privately.
+
+---
+
+# Community
+
+By contributing, you agree to follow our **Code of Conduct**.
+
+We aim to maintain a collaborative, respectful, and inclusive environment for all contributors.
+
+Thank you for helping improve the Autonomous DeFi Agent project.
+
