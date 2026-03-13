@@ -205,3 +205,9 @@ We aim to maintain a collaborative, respectful, and inclusive environment for al
 
 Thank you for helping improve the Autonomous DeFi Agent project.
 
+```Bash
+git add CONTRIBUTING.md CODE_OF_CONDUCT.md
+git commit -m "Add contribution guidelines and code of conduct"
+git push
+```
+
