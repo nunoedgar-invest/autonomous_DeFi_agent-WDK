@@ -88,8 +88,8 @@ For more information see:
 https://www.contributor-covenant.org
 
 ```Bash
-git add CONTRIBUTING.md
-git commit -m "Add contribution guidelines"
+git add CONTRIBUTING.md and CODE_OF_CONDUCT.md
+git commit -m "Add contributiion guidelines and Code of Conduct"
 git push
 ```
 
