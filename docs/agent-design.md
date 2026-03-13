@@ -365,3 +365,12 @@ The Autonomous DeFi Agent is designed as a **modular autonomous financial system
 * interacting with blockchain infrastructure
 
 This design enables the agent to act as an **autonomous participant in decentralized financial systems**, aligning with the vision of agents as programmable economic infrastructure.
+
+
+```Bash
+touch docs/agent-design.md
+git add docs/agent-design.md
+git commit -m "Add agent design documentation"
+git push
+```
+
