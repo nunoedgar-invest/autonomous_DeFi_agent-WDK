@@ -133,31 +133,160 @@ Update Agent State
 ---
 
 # Project Structure
-
 ```
-defi-agent/
+autonomous-defi-agent/
+│
+├── README.md
+├── LICENSE
+├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
+├── .env.example
+├── .gitignore
+│
+├── docs/
+│   ├── architecture.md
+│   ├── agent-design.md
+│   ├── smart-contracts.md
+│   └── demo-guide.md
 │
 ├── agent/
-│   ├── decision_engine.py
-│   ├── strategies/
-│   └── risk_manager.py
+│   ├── core/
+│   │   ├── decision_engine.py
+│   │   ├── strategy_engine.py
+│   │   └── risk_manager.py
+│   │
+│   ├── monitoring/
+│   │   ├── price_monitor.py
+│   │   └── gas_monitor.py
+│   │
+│   ├── execution/
+│   │   ├── trade_executor.py
+│   │   └── tx_pipeline.py
+│   │
+│   └── run_agent.py
 │
 ├── blockchain/
-│   ├── wallet.py
-│   ├── gas_estimator.py
-│   └── tx_executor.py
+│   ├── wallet/
+│   │   ├── wallet_manager.py
+│   │   └── key_store.py
+│   │
+│   ├── gas/
+│   │   └── gas_estimator.py
+│   │
+│   ├── chains/
+│   │   ├── ethereum.py
+│   │   ├── polygon.py
+│   │   └── arbitrum.py
+│   │
+│   └── rpc_client.py
 │
 ├── contracts/
-│   └── interaction_pipeline.py
+│   ├── AgentVault.sol
+│   ├── AgentExecutor.sol
+│   │
+│   ├── interfaces/
+│   │   ├── IUniswapRouter.sol
+│   │   └── IERC20.sol
+│   │
+│   └── scripts/
+│       ├── deploy.ts
+│       └── verify.ts
 │
 ├── api/
-│   └── server.py
+│   ├── server.py
+│   ├── routes/
+│   │   ├── portfolio.py
+│   │   └── agent_control.py
+│   │
+│   └── schemas/
+│       └── models.py
 │
 ├── dashboard/
+│   ├── frontend/
+│   │   ├── pages/
+│   │   ├── components/
+│   │   └── services/
+│   │
+│   └── package.json
 │
-└── README.md
+├── strategies/
+│   ├── dip_buy_strategy.py
+│   ├── arbitrage_strategy.py
+│   └── rebalance_strategy.py
+│
+├── simulations/
+│   ├── backtest_engine.py
+│   └── scenario_tests.py
+│
+├── tests/
+│   ├── test_agent.py
+│   ├── test_wallet.py
+│   └── test_strategies.py
+│
+├── scripts/
+│   ├── start_agent.sh
+│   ├── deploy_contracts.sh
+│   └── setup_env.sh
+│
+├── docker/
+│   ├── Dockerfile
+│   └── docker-compose.yml
+│
+└── .github/
+    ├── workflows/
+    │   └── ci.yml
+    │
+    └── ISSUE_TEMPLATE/
+        ├── bug_report.md
+        └── feature_request.md
 ```
 
+```
+docs/
+```
+Include:
+
+architecture diagram
+
+design explanation
+
+demo instructions
+
+```
+contracts/
+```
+Contains:
+
+vault contracts
+
+executor contracts
+
+interfaces
+
+This shows proper Web3 engineering practices.
+
+### 4️⃣ Strategy Modules
+```
+strategies/
+```
+Allows plug-in strategies:
+```
+dip buy
+arbitrage
+yield farming
+portfolio rebalance
+
+```
+
+### 5️⃣ Simulations / Backtesting
+```
+simulations/
+```
+Example:
+```
+simulate strategy over historical prices
+```
+Even a simple simulation module adds huge credibility.
 ---
 
 # Tech Stack
