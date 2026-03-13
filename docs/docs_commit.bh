@@ -1,0 +1,6 @@
+mkdir docs
+touch docs/architecture.md
+
+git add docs/architecture.md
+git commit -m "Add system architecture documentation"
+git push
