@@ -87,5 +87,11 @@ This Code of Conduct is inspired by the **Contributor Covenant**, a widely adopt
 For more information see:
 https://www.contributor-covenant.org
 
+```Bash
+git add CONTRIBUTING.md
+git commit -m "Add contribution guidelines"
+git push
+```
+
 
 
