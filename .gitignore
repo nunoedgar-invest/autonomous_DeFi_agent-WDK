@@ -1,0 +1,22 @@
+PRIVATE_KEY= 
+RPC_URL= 
+CHAIN_ID=
+
+# Windows clutter
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# VS Code clutter
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Common programming "noise"
+node_modules/
+__pycache__/
+*.log
+.DS_Store
