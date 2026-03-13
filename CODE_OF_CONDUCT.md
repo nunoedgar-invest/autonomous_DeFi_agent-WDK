@@ -1,78 +1,91 @@
-# CODE_OF_CONDUCT - Community Behavior Rules
+# Code of Conduct - Community Behavior Guidelines
 
-This document defines acceptable behavior within the project community.
+## Our Pledge
 
-Purpose:
+We as maintainers and contributors pledge to make participation in this project a respectful and harassment-free experience for everyone, regardless of:
 
-• create a respectful community
-• prevent harassment
-• define moderation rules
+* experience level
+* gender identity or expression
+* sexual orientation
+* disability
+* personal appearance
+* nationality
+* ethnicity
+* religion
 
-### 1. Our Pledge
+Our goal is to build a welcoming community around open collaboration and innovation.
 
-• We foster a welcoming environment
-• We care for respect regardless of background
-• We seek professional interaction
+---
 
-### 2. Our Standards
+# Our Standards
 
-• respectful communication
-• constructive feedback
-• collaboration
+Examples of behavior that contribute to a positive environment include:
 
-Examples of unacceptable behavior:
+* Being respectful and inclusive
+* Providing constructive feedback
+* Accepting differing viewpoints
+* Focusing on what is best for the project
+* Helping other contributors learn and grow
 
-• harassment
-• discrimination
-• personal attacks
-• trolling
+Examples of unacceptable behavior include:
 
-### 3. Enforceme
-nt of
-Responsibilities
-Defines who enforces the rules.
+* Harassment or discriminatory language
+* Personal attacks or insults
+* Trolling or disruptive behavior
+* Publishing private information without consent
+* Any conduct that would be considered unprofessional in a professional environment
 
-```
-Project maintainers are responsible for enforcing the Code of Conduct.
+---
 
-```
+# Enforcement Responsibilities
 
-### 4. Scope
+Project maintainers are responsible for clarifying and enforcing the standards of acceptable behavior.
 
-Defines where the code of conduct applies.
+Maintainers may remove, edit, or reject comments, commits, issues, or other contributions that are not aligned with this Code of Conduct.
 
-• GitHub issues
-• pull requests and opening issues
-• project discussions
-• chat communities (Discord, Slack)
+---
 
+# Scope
 
-### 5. Reporting Violations
-Explain how people can report problems.
+This Code of Conduct applies within all project spaces, including:
 
-```
-If you experience or witness unacceptable behavior,
-please contact the maintainers privately.
-```
+* GitHub issues
+* Pull requests
+* discussions
+* documentation
+* communication channels related to the project
 
-### 6. Enforcement Guidelines
-Describes consequences for violations.
+It also applies when an individual is representing the project in public spaces.
 
-Typical escalations:
+---
+
+# Reporting Violations
+
+If you experience or witness behavior that violates this Code of Conduct, please report it to the project maintainers.
+
+All reports will be reviewed and investigated promptly and fairly.
+
+Maintainers will respect the privacy and security of reporters.
+
+---
+
+# Enforcement Guidelines
+
+Maintainers may take the following actions depending on the severity of the violation:
 
 1. Warning
+2. Temporary restriction from participation
+3. Removal of contributions
+4. Permanent ban from the project
 
-2. Temporary restriction
+---
 
-3. Permanent ban
+# Attribution
 
+This Code of Conduct is inspired by the **Contributor Covenant**, a widely adopted open-source code of conduct standard.
 
+For more information see:
+https://www.contributor-covenant.org
 
-### 7. Attribution
-If using Contributor Covenant, the file credits it.
-
-```
-This Code of Conduct is adapted from the Contributor Covenant.
-```
 
 
