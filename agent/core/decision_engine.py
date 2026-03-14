@@ -122,16 +122,17 @@ Example Usage
 Inside the agent loop:
 """
 
-from agent.core.decision_engine import DecisionEngine
+#from agent.core.decision_engine import DecisionEngine
 
-engine = DecisionEngine(strategies, agent_state)
+#engine = DecisionEngine(strategies, agent_state)
 
-action = engine.decide(market_data)
+#action = engine.decide(market_data)
 
 """ 
 Example return:
 """
 
+"""
 {
  "type": "swap",
  "protocol": "uniswap",
@@ -139,22 +140,24 @@ Example return:
  "to_token": "ETH",
  "amount": 100
 }
+"""
 
 """
 This action would then go to:
 """
 
-execution_engine.execute(action)
+#execution_engine.execute(action)
 
 """ 
 # Example Market Data Input
 """
-
+"""
 market_data = {
     "ETH_price": 2950,
     "ETH_change_24h": -3.4,
     "gas_price": 22
 }
+"""
 
 
 
