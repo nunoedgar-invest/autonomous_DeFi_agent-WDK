@@ -115,3 +115,46 @@ class DecisionEngine:
         self._mark_strategy_run(strategy)
 
         return best["action"]
+
+"""
+Example Usage
+
+Inside the agent loop:
+"""
+
+from agent.core.decision_engine import DecisionEngine
+
+engine = DecisionEngine(strategies, agent_state)
+
+action = engine.decide(market_data)
+
+""" 
+Example return:
+"""
+
+{
+ "type": "swap",
+ "protocol": "uniswap",
+ "from_token": "USDT",
+ "to_token": "ETH",
+ "amount": 100
+}
+
+"""
+This action would then go to:
+"""
+
+execution_engine.execute(action)
+
+""" 
+# Example Market Data Input
+"""
+
+market_data = {
+    "ETH_price": 2950,
+    "ETH_change_24h": -3.4,
+    "gas_price": 22
+}
+
+
+
