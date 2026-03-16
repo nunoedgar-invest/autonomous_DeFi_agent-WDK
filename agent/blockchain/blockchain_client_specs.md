@@ -45,7 +45,7 @@ print(client.get_block_number())
 
 ### Broadcast Transaction
 ```Python
-Broadcast Transaction
+tx_hash = client.send_raw_transaction(signed_tx)
 ```
 
 ### Wait for Confirmation
