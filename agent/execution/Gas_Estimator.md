@@ -3,11 +3,18 @@
 The Gas Estimator will:
 
 • estimate gas usage for transactions
+
 • retrieve current network gas price
+
 • calculate estimated transaction cost
+
 • enforce gas cost limits
+
 • optionally apply safety buffers
+
 • allow strategy-based gas thresholds
+
+
 
 ## Example Usage
 
