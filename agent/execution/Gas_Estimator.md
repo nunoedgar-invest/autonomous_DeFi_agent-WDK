@@ -1,4 +1,4 @@
-# Gas Estimeator Specification Execution
+# Gas Estimator Specification Execution
 
 The Gas Estimator will:
 
