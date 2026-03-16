@@ -2,6 +2,7 @@
 
 Your execution_engine.py should orchestrate the full pipeline:
 
+```Bash
 Decision Engine
       │
       ▼
@@ -16,6 +17,7 @@ Submit to Blockchain
       │
       ▼
 Update Agent State
+```
 
 # Example Action Flow
 
