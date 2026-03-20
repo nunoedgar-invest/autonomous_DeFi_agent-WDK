@@ -1,24 +1,89 @@
+# =========================================
+# 🔐 ENVIRONMENT VARIABLES (CRITICAL)
+# =========================================
 .env
+.env.*
+!.env.example
 
-PRIVATE_KEY= 
-RPC_URL= 
-CHAIN_ID=
-
-# Windows clutter
-Thumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-
-# VS Code clutter
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-*.code-workspace
-
-# Common programming "noise"
-node_modules/
+# =========================================
+# 🐍 PYTHON
+# =========================================
 __pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+
+# Logs
 *.log
+
+# =========================================
+# 📦 NODE / TYPESCRIPT
+# =========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+
+# =========================================
+# 🌐 FRONTEND (GENERAL)
+# =========================================
+.cache/
+.parcel-cache/
+.next/
+out/
+
+# =========================================
+# 🧪 TEST / COVERAGE
+# =========================================
+coverage/
+.pytest_cache/
+
+# =========================================
+# 💻 IDE / EDITOR FILES
+# =========================================
+.vscode/
+.idea/
+*.swp
+*.swo
 .DS_Store
+
+# =========================================
+# 🔐 BLOCKCHAIN / WEB3 SENSITIVE FILES
+# =========================================
+wallet.json
+keystore/
+*.key
+*.pem
+
+# =========================================
+# 📊 LOCAL DATA / TEMP FILES
+# =========================================
+*.csv
+*.sqlite
+*.db
+
+# =========================================
+# 🐳 DOCKER (if added later)
+# =========================================
+docker-compose.override.yml
+
+# =========================================
+# 🚀 MISC
+# =========================================
+*.bak
+*.tmp
