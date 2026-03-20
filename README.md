@@ -24,6 +24,10 @@ The **Autonomous DeFi Agent** acts as an automated financial operator capable of
 
 ---
 
+```Bash
+pip install python-dotenv
+``` 
+
 # Key Features
 
 ### Self-Custodial Wallet Management
