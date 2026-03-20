@@ -18,13 +18,18 @@ from strategies.strategy_loader import load_strategies
 
 
 def main():
+    
 
     # ----------------------------------------
     # CONFIG
     # ----------------------------------------
+    import os
+    from dotenv import load_dotenv
 
-    RPC_URL = "https://rpc.ankr.com/eth"
-    PRIVATE_KEY = "YOUR_PRIVATE_KEY"
+    load_dotenv()
+
+    RPC_URL = os.getenv("RPC_URL")
+    PRIVATE_KEY = os.getenv("PRIVATE_KEY")
 
     # ----------------------------------------
     # CORE COMPONENTS
